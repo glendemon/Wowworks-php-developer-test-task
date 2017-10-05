@@ -16,6 +16,7 @@
 9. В проекте должны быть тесты, которые проверяют REST API (behat или codeception).
 10. Проект должен проходить проверку https://github.com/squizlabs/PHP_CodeSniffer со стилем PSR2.
 11. Проект должен проходить проверку https://github.com/phpstan/phpstan.
+12. По REST API должна быть документация в формате https://swagger.io/.
 
 ### Требования / Ограничения	
 
