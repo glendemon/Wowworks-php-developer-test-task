@@ -58,7 +58,7 @@
 | нету | -1 |
 | соблюден какой-либо codestyle | 0.5 |
 | PSR2 | 1 |
-| phpcs --standard=PSR2 не выдает ошибок | 1.75 |
+| `phpcs --standard=PSR2` не выдает ошибок | 1.75 |
 | корректно настроен phpcs.xml.dist | 2 |
 
 ### C3. Phpstan
