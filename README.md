@@ -36,3 +36,17 @@
 ##### Результат				
 * Ссылка на код на Github / BitBucket;
 * Как плюс, ссылка на работающий пример. 
+
+## Список литературы:
+* https://docs.docker.com/get-started/
+* https://docs.docker.com/compose/
+* https://github.com/squizlabs/PHP_CodeSniffer/wiki
+* https://github.com/phpstan/phpstan
+* https://swagger.io/docs/
+* https://codeception.com/quickstart
+* https://github.com/sebastianbergmann/phpcpd
+* https://phpunit.de/documentation.html
+* https://refactoring.guru/ru
+* Стив Макконнелл. Совершенный код.
+* https://ru.wikipedia.org/wiki/Design_Patterns
+* http://wiki.c2.com/?GlobalVariablesAreBad
