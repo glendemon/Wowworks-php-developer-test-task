@@ -149,22 +149,39 @@
 | бизнес логика написана в классе ActiveRecord | -1 |
 | бизнес логика вынесена из классов ActiveRecord | 2 |
 
-толстый контроллер
--1 бал
-Dependency Injection**
-acceptance tests
-есть
-покрыты все endpoint
-100% code coverage
-vendor/bin/codecept run --coverage --coverage-xml --coverage-html --no-ansi --no-colors
-unit tests
-нету вообще никаких
--0.5 балов
-codeception unit
-phpunit
-+1
-phpunit.xml.dist
-unit тесты реально unit
+### C14. Толстый контроллер
+
+| Описание  | Балл |
+| --------- | ----:|
+| толстый контроллер | -1 |
+| тонкий контроллер | 2 |
+
+### C15. Dependency Injection
+
+| Описание  | Балл |
+| --------- | ----:|
+| отсутствует | 0 |
+| присутствует, есть замечания | 2 |
+| присутствует, нету замечаний | 4 |
+
+### C16. Acceptance tests
+
+| Описание  | Балл |
+| --------- | ----:|
+| отсутствуют | 0 |
+| присутствуют | 1 |
+| есть на все endpoints | 2 |
+| 100% code coverage (`vendor/bin/codecept run --coverage --coverage-xml --coverage-html`) | 2 |
+
+### C17. Unit tests
+
+| Описание  | Балл |
+| --------- | ----:|
+| отсутствуют | -0.5 |
+| написаны на codeception unit | 1 |
+| написаны на phpunit, есть phpunit.xml.dist | 1.5 |
+| использован Mockery | 2 |
+| тесты на самом деле unit, codecoverage > 50% | 3 |
 
 ## Список литературы
 * https://docs.docker.com/get-started/
@@ -177,6 +194,7 @@ unit тесты реально unit
 * https://codeception.com/quickstart
 * https://github.com/sebastianbergmann/phpcpd
 * https://phpunit.de/documentation.html
+* https://github.com/mockery/mockery
 * https://refactoring.guru/ru
 * Стив Макконнелл. Совершенный код.
 * https://ru.wikipedia.org/wiki/Design_Patterns
