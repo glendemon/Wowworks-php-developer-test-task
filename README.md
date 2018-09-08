@@ -35,13 +35,87 @@
 						
 ##### Результат				
 * Ссылка на код на Github / BitBucket;
-* Как плюс, ссылка на работающий пример. 
+* Как плюс, ссылка на работающий пример.
 
-## Список литературы:
+## Критерии приемки
+
+По каждому критерию можно получить только фиксированный балл, внутри одного критерия баллы не суммируются.
+
+### C1. Deploy
+
+| Описание  | Балл |
+| --------- | ----:|
+| есть README.md | 0.5 |
+| использован vagrant | 0.75 |
+| использован docker | 1 |
+| есть docker-compose.yml | 1.5 |
+
+### C2. Сodestyle
+
+| Описание  | Балл |
+| --------- | ----:|
+| соблюден какой-либо codestyle | 0.5 |
+| PSR2 | 1 |
+| phpcs --standard=PSR2 не выдает ошибок | 1.75 |
+| корректно настроен phpcs.xml.dist | 2 |
+
+### C3. Phpstan
+
+| Описание  | Балл |
+| --------- | ----:|
+| не исправлены ошибки phpstan level=0 | 0 |
+| исправлены ошибки phpstan level=0 | 1 |
+| настроен phpstan.neon. `vendor/bin/phpstan analyse -l 0 -c phpstan.neon <directories>` не показывает ошибок, где `<directories>` - папки с бизнес логикой, исправлять ошибки в `vendor`, либо в системных файлах фреймфорка не надо | 1.5 |
+
+### C4. Composer
+
+| Описание  | Балл |
+| --------- | ----:|
+| соблюден какой-либо codestyle | 0.5 |
+| PSR2 | 1 |
+| phpcs --standard=PSR2 не выдает ошибок | 1.75 |
+| корректно настроен phpcs.xml.dist | 2 |
+
+composer
+api
+нету
+-1 бал
+есть
++1 бал
+swagger
+MVC
+DRY
+phpcpd**
+SOLID
+Global variable
+Неоправданный static
+критерий - phpunit тест
+бизнес-логика в классах ActiveRecord
+-2 бала
+толстый контроллер
+-1 бал
+Dependency Injection**
+acceptance tests
+есть
+покрыты все endpoint
+100% code coverage
+vendor/bin/codecept run --coverage --coverage-xml --coverage-html --no-ansi --no-colors
+unit tests
+нету вообще никаких
+-0.5 балов
+codeception unit
+phpunit
++1
+phpunit.xml.dist
+unit тесты реально unit
+
+## Список литературы
 * https://docs.docker.com/get-started/
 * https://docs.docker.com/compose/
+* https://www.php-fig.org/psr/
 * https://github.com/squizlabs/PHP_CodeSniffer/wiki
 * https://github.com/phpstan/phpstan
+* https://getcomposer.org/doc/00-intro.md
 * https://swagger.io/docs/
 * https://codeception.com/quickstart
 * https://github.com/sebastianbergmann/phpcpd
